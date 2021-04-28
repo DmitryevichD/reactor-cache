@@ -1,0 +1,20 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+      indent-output: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+  liquibase:
+    url: jdbc:postgresql://127.0.0.1:5444/database
+    user: postgres
+    password: postgres
+  r2dbc:
+    url: r2dbc:postgresql://127.0.0.1:5444/database
+    username: postgres
+    password: postgres
+  redis:
+    port: 6388
+    host: 127.0.0.1
